@@ -108,6 +108,11 @@ nav ul li a{
     display: none;
 }
 
+.song-name{
+    font-size:0.7rem;
+    font-weight: bold;
+}
+
 #myProgress{
     width: 80vw;
     justify-content: center;
