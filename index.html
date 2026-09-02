@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="icon" type="image/png" href="./covers/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><a href="index.html"><img src="./covers/logo.png" alt="Spotify"></a>Spotify</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="song-list">
+                <h1>Best of NCS - No copy right Sound</h1>
+                <div class="song-item-container">
+                    <div class="song-item">
+                        <img alt="1">
+                        <span class="song-name">Dil Ibadat Kar Raha</span>
+                        <span class="song-list-play">
+                            <span class="time-stamp">05:35 
+                                <i id="0" class="far  song-item-play fa-play-circle"></i>
+                            </span>
+                        </span> 
+                    </div>
+
+                    <div class="song-item">
+                        <img alt="2">
+                        <span class="song-name">Achi Lagti hu</span>
+                        <span class="song-list-play">
+                            <span class="time-stamp">07:40 <i id="1" class="far song-item-play fa-play-circle"></i></span>
+                        </span> 
+                    </div>
+                
+
+                    <div class="song-item">
+                        <img alt="3">
+                        <span class="song-name">Love Nawantiti</span>
+                        <span class="song-list-play">
+                            <span class="time-stamp">02:55 <i id="2" class="far song-item-play fa-play-circle"></i></span>
+                        </span> 
+                    </div>
+
+                    <div class="song-item">
+                        <img alt="4">
+                        <span class="song-name">Tume Dillagi bhool</span>
+                        <span class="song-list-play">
+                            <span class="time-stamp">05:50 <i id="3" class="far song-item-play fa-play-circle"></i></span>
+                        </span> 
+                    </div>
+
+                    <div class="song-item">
+                        <img alt="5">
+                        <span class="song-name">Koyi Aye na Rabba</span>
+                        <span class="song-list-play">
+                            <span class="time-stamp">04:30 <i id="4" class="far song-item-play fa-play-circle"></i></span>
+                        </span> 
+                    </div>
+
+                    <div class="song-item">
+                        <img alt="6">
+                        <span class="song-name">Wavy (Slowed+ Reverb)</span>
+                        <span class="song-list-play">
+                            <span class="time-stamp">03:21 <i id="5" class="far song-item-play fa-play-circle"></i></span>
+                        </span> 
+                    </div>
+
+                    <div class="song-item">
+                        <img alt="7">
+                        <span class="song-name">Fell For You</span>
+                        <span class="song-list-play">
+                            <span class="time-stamp">03:11 <i id="6" class="far song-item-play fa-play-circle"></i></span>
+                        </span> 
+                    </div>
+
+                    <div class="song-item">
+                        <img alt="8">
+                        <span class="song-name">Pal Pal</span>
+                        <span class="song-list-play">
+                            <span class="time-stamp">02:27 <i id="7" class="far song-item-play fa-play-circle"></i></span>
+                        </span> 
+                    </div>
+                </div>
+            </div>
+        <div class="song-banner"></div>
+    </div>
+</main>
+    <!--footer-->
+        <div class="bottom">
+            <input type="range" name="range" id="myProgress" value="0" min="0" max="100">
+            <div class="icons">
+                <!-- fontawesome icons -->
+                <i class="fa-3x fa-solid fa-backward" id="previous"></i>           
+                <i class="fa-3x far fa-play-circle" id="masterPlay"></i>
+                <i class="fa-3x fa-solid fa-forward" id="next"></i>           
+            </div>
+            <div class="song-info" id="myProgressBar">
+                <img src="./covers/playing.gif" width="42px" id="gif"> 
+                 <span id="master-song-name">Dil Ibadat</span> 
+            </div>
+        </div>
+        <!-- <script src="https://kit.fontawesome.com/b124e11851.js" crossorigin="anonymous"></script> -->
+        <script src="script.js"></script>
+ </body>
+</html>

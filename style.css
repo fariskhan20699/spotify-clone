@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+html, body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 89;
+    background-color: black;
+    color: whitesmoke;
+    
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.brand img{
+    width: 44px; 
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3 rem;
+    margin-right: 23px;
+}
+
+.container{
+    height: 70vh;
+    min-height: 0;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 80%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('./covers/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: whitesmoke;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 16px;
+}
+
+.icons i{
+     cursor: pointer;
+}
+
+.song-list{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.song-item-container{
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.song-item-container::-webkit-scrollbar{
+    display: none;
+}
+
+#myProgress{
+    width: 80vw;
+    justify-content: center;
+    cursor: pointer;
+    color: transparent;
+}
+
+.song-item-container{
+    margin-top: 65px;
+}
+
+.song-item{
+    height: 50px;
+    display: flex;
+    background-color: whitesmoke;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 43px;
+}
+
+.song-item img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.time-stamp{
+    margin: 0 23px;
+}
+
+.time-stamp i{
+    cursor: pointer;
+  
+}
+ 
+.song-info{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round' , sans-serif;
+
+}
+
+.song-info img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+/* About Page Styles */
+
+.about-container{
+    height: auto;
+    min-height: 0;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 80%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./covers/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+.about{
+    text-align: center;
+    padding: 20px;
+}
+
+.about h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+ }
+
+.about p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.requirements{
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.requirements li{
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.requirements li::before{
+    content: "• ";
+    color: #000;
+    font-weight: bold;
+}
+
+.developer{
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0fe737;
+}
+
+/* Responsive Design */
+@media (max-width: 768px){
+
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+    }
+
+    .container{
+        width: 100%;
+        height: 70vh;
+        min-height: 0;
+        margin: 65px 0 10px 0;
+        padding: 15px;
+        background-image: none;
+        background-color: black;
+        border-radius: 10px;
+        box-sizing: border-box;
+      
+    }
+    
+    .brand img{
+        width: 30px; 
+        padding: 0 5px;
+    }
+
+    .brand{
+        font-size: 1em;
+        margin-right: 10px;
+    }
+
+    .song-list{
+        width: 100%;
+        height: 100%;
+    }
+
+    .song-list h1{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .song-item-container{
+        height: calc(100% - 50px);
+        overflow-y: auto;
+    }
+
+    .song-item{
+        width: 100%;
+        box-sizing: border-box;
+        height: 40px;
+        margin: 8px 0;
+    }
+
+    .song-banner{
+        display: none;
+    }
+
+    .song-info{
+        left: 5vw;
+    }
+
+    .song-info img{
+        width: 30px;
+    }
+     
+    .song-item img{
+        width: 30px;
+        margin: 0 15px;
+    }
+
+    .icons{
+        margin-top: 10px;
+    }
+
+    .icons i{
+        font-size: 1.2em;
+    }
+
+    .bottom{
+        height: 100px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: black;
+        z-index: 1000;
+        
+    }
+
+    .about-container{
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        margin: 15px 0 10px 0;
+        padding: 15px;
+        background-image: none;
+        background-color: black;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .about{
+        padding: 10px;
+    }
+
+    .about h1{
+        font-size: 1.5em;
+    }
+
+    .about p{
+        font-size: 1em;
+    }
+
+    .requirements li{
+        font-size: 1em;
+    }
+
+    .about .developer{
+        font-size: 1em;
+    }
+
+    .about .developer{
+        font-size: 1em;
+    }
+
+}
